@@ -38,8 +38,6 @@ export default function EventMap({ evt }) {
   // prevents jsx from being rendered before geocode is loaded
   if (loading) return false
 
-  console.log(lat, lng)
-
   return (
     <ReactMapGl
       {...viewport}

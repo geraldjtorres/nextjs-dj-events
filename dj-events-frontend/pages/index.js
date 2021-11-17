@@ -26,8 +26,6 @@ export async function getStaticProps() {
   const rest = await fetch(`${API_URL}/events?_sort=date:ASC&_limit=3`)
   const events = await rest.json()
 
-  console.log(events)
-
   return {
     props: { events },
     revalidate: 1
